@@ -11,10 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508190243) do
+ActiveRecord::Schema.define(version: 20150510181444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "business_profiles", force: :cascade do |t|
+    t.string   "business_name"
+    t.string   "type_of_business"
+    t.string   "cuisine_style"
+    t.string   "dietary_offerings"
+    t.integer  "price_range"
+    t.integer  "rating"
+    t.text     "description"
+    t.string   "website_url"
+    t.string   "phone_number"
+    t.string   "country"
+    t.string   "state"
+    t.string   "city"
+    t.integer  "zipcode"
+    t.string   "address1"
+    t.string   "address2"
+    t.integer  "latitude"
+    t.integer  "longitude"
+    t.string   "facebook"
+    t.string   "instagram"
+    t.string   "foursquare"
+    t.integer  "business_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "businesses", force: :cascade do |t|
     t.string   "business_name",          default: "", null: false
@@ -35,8 +61,22 @@ ActiveRecord::Schema.define(version: 20150508190243) do
   add_index "businesses", ["email"], name: "index_businesses_on_email", unique: true, using: :btree
   add_index "businesses", ["reset_password_token"], name: "index_businesses_on_reset_password_token", unique: true, using: :btree
 
+  create_table "user_profiles", force: :cascade do |t|
+    t.string   "user_name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "diet"
+    t.string   "gender"
+    t.integer  "age"
+    t.string   "facebook"
+    t.string   "instagram"
+    t.string   "foursquare"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string   "user_name",              default: "", null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

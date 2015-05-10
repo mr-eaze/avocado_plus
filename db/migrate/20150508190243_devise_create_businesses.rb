@@ -2,9 +2,6 @@ class DeviseCreateBusinesses < ActiveRecord::Migration
   def change
     create_table(:businesses) do |t|
 
-      # Business Details
-      t.string :business_name,      null: false, default: ""
-
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
