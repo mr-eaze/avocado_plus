@@ -43,5 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
-# heroku gem
+# heroku
 gem 'rails_12factor', group: :production
+# devise
+gem 'devise'
