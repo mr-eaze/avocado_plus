@@ -13,6 +13,7 @@ class CreateUserProfiles < ActiveRecord::Migration
     	t.integer :age
     	
     	## networks
+        t.string  :twitter, unique: true
     	t.string  :facebook, unique: true
     	t.string  :instagram, unique: true
     	t.string  :foursquare, unique: true

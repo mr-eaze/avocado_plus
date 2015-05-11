@@ -26,6 +26,7 @@ class CreateBusinessProfiles < ActiveRecord::Migration
 			t.integer :longitude
 
     	## networks
+    	t.string  :twitter, unique: true
     	t.string  :facebook, unique: true
     	t.string  :instagram, unique: true
     	t.string  :foursquare, unique: true

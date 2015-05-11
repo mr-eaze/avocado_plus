@@ -1,0 +1,45 @@
+<!-- errors could go here -->
+
+<%= form_for @user_profile do |f| %>
+	
+	<%= f.label      :user_name %>
+	<%= f.text_field :user_name %>
+
+	<hr>
+	
+	<%= f.label      :first_name %>
+	<%= f.text_field :first_name %>
+	
+	<%= f.label      :last_name %>
+	<%= f.text_field :last_name %>
+	
+	<hr>
+
+	<%= f.label      :diet %>
+	<%= f.text_field :diet %>
+	
+	<%= f.label      :gender %>
+	<%= f.text_field :gender %>
+	
+	<%= f.label      :age %>
+	<%= f.text_field :age %>
+	
+	<hr>
+
+	<%= f.label      :twitter %>
+	<%= f.text_field :twitter %>
+
+	<%= f.label      :facebook %>
+	<%= f.text_field :facebook %>
+	
+	<%= f.label      :instagram %>
+	<%= f.text_field :instagram %>
+
+	<%= f.label      :foursquare %>
+	<%= f.text_field :foursquare %>
+
+	<hr>
+	
+	<%= f.submit 'Submit' %>
+
+<% end %>

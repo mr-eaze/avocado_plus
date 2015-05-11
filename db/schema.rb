@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20150510181444) do
     t.string   "address2"
     t.integer  "latitude"
     t.integer  "longitude"
+    t.string   "twitter"
     t.string   "facebook"
     t.string   "instagram"
     t.string   "foursquare"
@@ -43,7 +44,6 @@ ActiveRecord::Schema.define(version: 20150510181444) do
   end
 
   create_table "businesses", force: :cascade do |t|
-    t.string   "business_name",          default: "", null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20150510181444) do
     t.string   "diet"
     t.string   "gender"
     t.integer  "age"
+    t.string   "twitter"
     t.string   "facebook"
     t.string   "instagram"
     t.string   "foursquare"

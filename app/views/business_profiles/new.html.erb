@@ -1,0 +1,76 @@
+<!-- errors could go here -->
+
+<%= form_for @business_profile do |f| %>
+
+	<%= f.label      :business_name %> 
+	<%= f.text_field :business_name %> 
+
+	<hr>
+
+	<%= f.label      :type_of_business %> 
+	<%= f.text_field :type_of_business %> 
+
+	<%= f.label      :cuisine_style %> 
+	<%= f.text_field :cuisine_style %> 
+
+	<%= f.label      :dietary_offerings %> 
+	<%= f.text_field :dietary_offerings %> 
+
+	<hr>
+
+	<%= f.label      :price_range %> 
+	<%= f.text_field :price_range %> 
+
+	<%= f.label      :rating %> 
+	<%= f.text_field :rating %> 
+
+	<%= f.label      :description %> 
+	<%= f.text_field :description %> 
+
+	<hr>
+
+	<%= f.label      :website_url %> 
+	<%= f.text_field :website_url %> 
+
+	<%= f.label      :phone_number %> 
+	<%= f.text_field :phone_number %> 
+
+	<hr>
+
+	<%= f.label      :country %> 
+	<%= f.text_field :country %> 
+
+	<%= f.label      :state %> 
+	<%= f.text_field :state %> 
+
+	<%= f.label      :city %> 
+	<%= f.text_field :city %> 
+
+	<%= f.label      :zipcode %> 
+	<%= f.text_field :zipcode %> 
+
+	<%= f.label      :address1 %> 
+	<%= f.text_field :address1 %> 
+
+	<%= f.label      :address2 %> 
+	<%= f.text_field :address2 %> 
+
+	<hr>
+
+	<%= f.label      :twitter %>
+	<%= f.text_field :twitter %>
+
+	<%= f.label      :facebook %> 
+	<%= f.text_field :facebook %> 
+
+	<%= f.label      :instagram %> 
+	<%= f.text_field :instagram %> 
+
+	<%= f.label      :foursquare %> 
+	<%= f.text_field :foursquare %> 
+
+	<hr>
+		
+	<%= f.submit 'Submit' %>
+
+<% end %>
