@@ -2,75 +2,128 @@
 
 <%= form_for @business_profile do |f| %>
 
-	<%= f.label      :business_name %> 
-	<%= f.text_field :business_name %> 
+<h2> welcome </h2>
 
-	<hr>
+<div id="please-fill-out"> please fill out all of the required fields : </div>
 
-	<%= f.label      :type_of_business %> 
-	<%= f.text_field :type_of_business %> 
+<!-- business name -->
+	<div class="form container ">
+		<div class="form label"> business name </div>
+		<div class="form input"> <%= f.text_field :business_name %> </div>
+	</div>
 
-	<%= f.label      :cuisine_style %> 
-	<%= f.text_field :cuisine_style %> 
+<!-- about -->
 
-	<%= f.label      :dietary_offerings %> 
-	<%= f.text_field :dietary_offerings %> 
+	<div class="form container ">
+		<div class="form label"> type of business </div>
+		<div class="form input"> <%= f.text_field :type_of_business %> </div>
+	</div>
 
-	<hr>
+	<div class="form container ">
+		<div class="form label"> cuisine style </div>
+		<div class="form input"> <%= f.text_field :cuisine_style %> </div>
+	</div>
 
-	<%= f.label      :price_range %> 
-	<%= f.text_field :price_range %> 
+	<div class="form container ">
+		<div class="form label"> dietary offerings </div>
+		<div class="form input"> <%= f.text_field :dietary_offerings %> </div>
+	</div>
 
-	<%= f.label      :rating %> 
-	<%= f.text_field :rating %> 
+	<div class="form container ">
+		<div class="form label"> description </div>
+		<div class="form input"> <%= f.text_field :description %> </div>
+	</div>
 
-	<%= f.label      :description %> 
-	<%= f.text_field :description %> 
+<!-- price / rating -->
 
-	<hr>
+	<div class="form container ">
+		<div class="form label"> price </div>
+		<div class="form input"> <%= f.text_field :price_range %> </div>
+	</div>
 
-	<%= f.label      :website_url %> 
-	<%= f.text_field :website_url %> 
+	<div class="form container ">
+		<div class="form label"> rating </div>
+		<div class="form input"> <%= f.text_field :rating %> </div>
+	</div>
 
-	<%= f.label      :phone_number %> 
-	<%= f.text_field :phone_number %> 
+<!-- contact -->
 
-	<hr>
+	<div class="form container ">
+		<div class="form label"> website url </div>
+		<div class="form input"> <%= f.text_field :website_url %> </div>
+	</div>
 
-	<%= f.label      :country %> 
-	<%= f.text_field :country %> 
+	<div class="form container ">
+		<div class="form label"> phone number </div>
+		<div class="form input"> <%= f.text_field :phone_number %> </div>
+	</div>
 
-	<%= f.label      :state %> 
-	<%= f.text_field :state %> 
+<!-- address -->
 
-	<%= f.label      :city %> 
-	<%= f.text_field :city %> 
+	<div class="form container ">
+		<div class="form label"> address1 </div>
+		<div class="form input"> <%= f.text_field :address1 %> </div>
+	</div>
 
-	<%= f.label      :zipcode %> 
-	<%= f.text_field :zipcode %> 
+	<div class="form container ">
+		<div class="form label"> address2 </div>
+		<div class="form input"> <%= f.text_field :address2 %> </div>
+	</div>
 
-	<%= f.label      :address1 %> 
-	<%= f.text_field :address1 %> 
+	<div class="form container ">
+		<div class="form label"> zipcode </div>
+		<div class="form input"> <%= f.text_field :zipcode %> </div>
+	</div>
 
-	<%= f.label      :address2 %> 
-	<%= f.text_field :address2 %> 
+	<div class="form container ">
+		<div class="form label"> city </div>
+		<div class="form input"> <%= f.text_field :city %> </div>
+	</div>
 
-	<hr>
+	<div class="form container ">
+		<div class="form label"> state </div>
+		<div class="form input"> <%= f.text_field :state %> </div>
+	</div>
 
-	<%= f.label      :twitter %>
-	<%= f.text_field :twitter %>
+	<div class="form container ">
+		<div class="form label"> country </div>
+		<div class="form input"> <%= f.text_field :country %> </div>
+	</div>
 
-	<%= f.label      :facebook %> 
-	<%= f.text_field :facebook %> 
+<!-- social -->
 
-	<%= f.label      :instagram %> 
-	<%= f.text_field :instagram %> 
+	<div class="form container ">
+		<div class="form label"> twitter </div>
+		<div class="form input"> <%= f.text_field :twitter %> </div>
+	</div>
 
-	<%= f.label      :foursquare %> 
-	<%= f.text_field :foursquare %> 
+	<div class="form container ">
+		<div class="form label"> facebook </div>
+		<div class="form input"> <%= f.text_field :facebook %> </div>
+	</div>
 
-	<hr>
+	<div class="form container ">
+		<div class="form label"> instagram </div>
+		<div class="form input"> <%= f.text_field :instagram %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> foursquare </div>
+		<div class="form input"> <%= f.text_field :foursquare %> </div>
+	</div>
 		
-	<%= f.submit 'Submit' %>
+	<div class="button container">
+		<%= f.submit 'Submit' %>
+	</div>	
 
 <% end %>
+
+
+
+
+
+
+
+
+
+

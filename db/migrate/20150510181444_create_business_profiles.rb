@@ -16,12 +16,12 @@ class CreateBusinessProfiles < ActiveRecord::Migration
 			t.string  :phone_number, unique: true
 
 			## location
-			t.string  :country
-			t.string  :state
-			t.string  :city
-			t.integer :zipcode	
 			t.string  :address1
 			t.string  :address2
+			t.integer :zipcode	
+			t.string  :city
+			t.string  :state
+			t.string  :country
 			t.integer :latitude
 			t.integer :longitude
 
