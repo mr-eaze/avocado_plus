@@ -25,11 +25,9 @@ UserProfile.destroy_all
 business_profiles = BusinessProfile.create([
 	{
 	  business_name: 'Champs Diner',
-	  type_of_business: 'Restaurant',
+	  business_type: 'Restaurant',
 	  cuisine_style: 'American / Diner / Comfort Food',
 	  dietary_offerings: '100% Vegan',
-	  price_range: 2,
-	  rating: 4,
 	  description: "Champs Family Bakery is a 100-percent vegan diner and bakery in Bushwick, Brooklyn.",
 	  website_url: 'www.champsdiner.com',
 	  phone_number: '(718) 963-0656',
@@ -47,11 +45,9 @@ business_profiles = BusinessProfile.create([
 	  foursquare: 'https://foursquare.com/v/champs/4a2048e8f964a520687c1fe3'
 	},{
 	  business_name: 'Beyond Sushi',
-	  type_of_business: 'Restaurant',
+	  business_type: 'Restaurant',
 	  cuisine_style: 'Japanese / Sushi',
 	  dietary_offerings: '100% Vegan',
-	  price_range: 3,
-	  rating: 3,
 	  description: "Beyond Sushi is a healthy lifestyle brand offering a fresh approach to traditional sushi.",
 	  website_url: 'www.beyondsushinyc.com',
 	  phone_number: '(646) 861-2889',
@@ -69,11 +65,9 @@ business_profiles = BusinessProfile.create([
 	  foursquare: 'https://foursquare.com/v/beyond-sushi--the-green-roll/51814e22498e812ad93a4530'
 	},{
 	  business_name: 'Bombay Sandwich Co.',
-	  type_of_business: 'Restaurant / Take-away',
+	  business_type: 'Restaurant / Take-away',
 	  cuisine_style: 'Indian / Fusion',
 	  dietary_offerings: '100% Vegetarian & Vegan',
-	  price_range: 2,
-	  rating: 3,
 	  description: "Health-minded storefront turning out Indian-inspired vegetarian & gluten-free fare, plus smoothies.",
 	  website_url: 'www.bombaysandwichco.com',
 	  phone_number: '(646) 781-9756',
