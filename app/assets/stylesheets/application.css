@@ -68,9 +68,10 @@ br {
 }
 
 .label {
-	width      : 49%;
-	text-align : right;
-	font-weight: 300;
+  width      : 49%;
+  float      : left;
+  text-align : right;
+  font-weight: 300;
 }
 
 .input {
