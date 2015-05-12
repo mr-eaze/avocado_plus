@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+* {
+	font-family: lato;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+#bg {
+  position: fixed; 
+  top       : 0; 
+  left      : 0; 
+  z-index   : -1;
+	min-width : 100%;
+  min-height: 100%;
+  opacity   : .8;
+}
+
+#welcome-container {
+	position        : relative;
+	width       		: 250px;
+	height          : 250px;
+	margin          : 15% auto;
+	padding         : 1%;
+	background-color: white;
+	border-radius   : 5px;
+	text-align      : center;
+	opacity         : .9;
+}
+
+#message-container {
+	margin: 20% auto;
+}
+
+p {
+	font-size: 1em;
+}
+
+hr {
+	/*margin : 0 25px 0;*/
+}
+
+#created-by {
+	display   : inline-block;
+	font-size : .75em;
+	width     : 40%;
+	text-align: right;
+	margin    : 5px; 
+}
+
+#mr-eaze {
+	display   : inline-block;
+	font-size : .75em;
+	width     : 40%;
+	text-align: left;
+	margin    : 5px;
+}

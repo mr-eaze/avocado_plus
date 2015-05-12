@@ -1,0 +1,129 @@
+<!-- errors could go here -->
+
+<%= form_for @business_profile do |f| %>
+
+<h2> welcome </h2>
+
+<div id="please-fill-out"> please fill out all of the required fields : </div>
+
+<!-- business name -->
+	<div class="form container ">
+		<div class="form label"> business name </div>
+		<div class="form input"> <%= f.text_field :business_name %> </div>
+	</div>
+
+<!-- about -->
+
+	<div class="form container ">
+		<div class="form label"> type of business </div>
+		<div class="form input"> <%= f.text_field :type_of_business %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> cuisine style </div>
+		<div class="form input"> <%= f.text_field :cuisine_style %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> dietary offerings </div>
+		<div class="form input"> <%= f.text_field :dietary_offerings %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> description </div>
+		<div class="form input"> <%= f.text_field :description %> </div>
+	</div>
+
+<!-- price / rating -->
+
+	<div class="form container ">
+		<div class="form label"> price </div>
+		<div class="form input"> <%= f.text_field :price_range %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> rating </div>
+		<div class="form input"> <%= f.text_field :rating %> </div>
+	</div>
+
+<!-- contact -->
+
+	<div class="form container ">
+		<div class="form label"> website url </div>
+		<div class="form input"> <%= f.text_field :website_url %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> phone number </div>
+		<div class="form input"> <%= f.text_field :phone_number %> </div>
+	</div>
+
+<!-- address -->
+
+	<div class="form container ">
+		<div class="form label"> address1 </div>
+		<div class="form input"> <%= f.text_field :address1 %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> address2 </div>
+		<div class="form input"> <%= f.text_field :address2 %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> zipcode </div>
+		<div class="form input"> <%= f.text_field :zipcode %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> city </div>
+		<div class="form input"> <%= f.text_field :city %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> state </div>
+		<div class="form input"> <%= f.text_field :state %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> country </div>
+		<div class="form input"> <%= f.text_field :country %> </div>
+	</div>
+
+<!-- social -->
+
+	<div class="form container ">
+		<div class="form label"> twitter </div>
+		<div class="form input"> <%= f.text_field :twitter %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> facebook </div>
+		<div class="form input"> <%= f.text_field :facebook %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> instagram </div>
+		<div class="form input"> <%= f.text_field :instagram %> </div>
+	</div>
+
+	<div class="form container ">
+		<div class="form label"> foursquare </div>
+		<div class="form input"> <%= f.text_field :foursquare %> </div>
+	</div>
+		
+	<div class="button container">
+		<%= f.submit 'Submit' %>
+	</div>	
+
+<% end %>
+
+
+
+
+
+
+
+
+
+

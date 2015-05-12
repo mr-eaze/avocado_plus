@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
@@ -43,5 +42,12 @@ group :development, :test do
   gem 'spring'
 end
 
-# heroku gem
+##--------------------------------------- 
+
+# console
+gem 'pry-rails', :group => :development
+
+# heroku
 gem 'rails_12factor', group: :production
+# devise
+gem 'devise'

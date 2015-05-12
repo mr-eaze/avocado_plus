@@ -1,6 +1,36 @@
 Rails.application.routes.draw do
   
-  root 'welcome#index'
+  root 'home#index'
+
+  devise_for :businesses
+  resources  :business_profiles
+
+  devise_for :users
+  resources  :user_profiles
+ 
+ ## --------------------------  
+
+ ##  - OR -
+
+ ## --------------------------  
+
+  # namespace :businesses do
+  #   devise_for :businesses
+  #   resources  :business_profiles
+  # end  
+  
+  # namespace :users do
+  #   devise_for :users
+  #   resources  :user_profiles
+  # end
+
+
+
+ ##---------------------------------------------------------------------------------
+
+ ##  ** EXAMPLES **
+
+ ##---------------------------------------------------------------------------------
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

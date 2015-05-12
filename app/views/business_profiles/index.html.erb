@@ -1,0 +1,22 @@
+<% @business_profiles.each do |business_profile| %>
+	
+	<li class="business item"> 
+		<div class="container profile name">
+			<div> <%= business_profile.business_name %> </div>
+		</div>
+
+		<div class="container profile section">
+			<div class="profile name" > price : </div>
+			<div class="profile value"> <%= business_profile.price_range %> </div>
+		</div>
+
+		<div class="container business profile section">
+			<div class="profile name" > rating : </div>
+			<div class="profile value"> <%= business_profile.rating %> </div>
+		</div>
+
+		<!-- add distance from user current location -->
+
+	</li>
+
+<% end %>

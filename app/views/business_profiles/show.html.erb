@@ -1,0 +1,139 @@
+<!-- business -->
+
+<h2> <%= @business_profile.business_name %> </h2>
+
+<!-- price / rating -->
+
+<div class="container group price-rating">
+	<div class="profile container">
+		<div class="profile label" > price : </div>
+		<div class="profile data"> <%= @business_profile.price_range %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > rating : </div>
+		<div class="profile data"> <%= @business_profile.rating %> </div>
+	</div>
+</div>
+
+<!-- about -->
+
+<div class="container group about">
+	<div class="profile container">
+		<div class="profile label" > type : </div>
+		<div class="profile data"> <%= @business_profile.type_of_business %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > cuisine : </div>
+		<div class="profile data"> <%= @business_profile.cuisine_style %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > offering : </div>
+		<div class="profile data"> <%= @business_profile.dietary_offerings %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > description : </div>
+		<div class="profile data"> <%= @business_profile.description %> </div>
+	</div>
+</div>
+
+<!-- contact -->
+
+<div class="container group contact">
+	<div class="profile container">
+		<div class="profile label" > website : </div>
+		<div class="profile data"> <%= @business_profile.website_url %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > phone : </div>
+		<div class="profile data"> <%= @business_profile.phone_number %> </div>
+	</div>
+</div>
+
+<!-- address -->
+
+<div class="container group address">
+	<div class="profile container">
+		<div class="profile label" > address : </div>
+		<div class="profile data"> <%= @business_profile.address1 %> </div>
+	</div>
+	
+	<% if @business_profile.address2 %>
+		<div class="profile container">
+			<div class="profile label" > address 2 : </div>
+			<div class="profile data"> <%= @business_profile.address2 %> </div>
+		</div>
+	<% end %>
+
+	<div class="profile container">
+		<div class="profile label" > zipcode : </div>
+		<div class="profile data"> <%= @business_profile.zipcode %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > city : </div>
+		<div class="profile data"> <%= @business_profile.city %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > state : </div>
+		<div class="profile data"> <%= @business_profile.state %> </div>
+	</div>
+
+	<div class="profile container">
+		<div class="profile label" > country : </div>
+		<div class="profile data"> <%= @business_profile.country %> </div>
+	</div>
+</div>
+
+<!-- social -->
+
+<div class="container group social">
+	<% if @business_profile.twitter %>
+		<div class="profile container">
+			<div class="profile label" > twitter : </div>
+			<div class="profile data"> <%= @business_profile.twitter %> </div>
+		</div>
+	<% end %>
+
+	<% if @business_profile.facebook %>
+		<div class="profile container">
+			<div class="profile label" > facebook : </div>
+			<div class="profile data"> <%= @business_profile.facebook %> </div>
+		</div>
+	<% end %>
+
+	<% if @business_profile.instagram %>
+		<div class="profile container">
+			<div class="profile label" > instagram : </div>
+			<div class="profile data"> <%= @business_profile.instagram %> </div>
+		</div>
+	<% end %>
+
+	<% if @business_profile.foursquare %>
+		<div class="profile container">
+			<div class="profile label" > foursquare : </div>
+			<div class="profile data"> <%= @business_profile.foursquare %> </div>
+		</div>
+	<% end %>
+</div>
+
+<!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
