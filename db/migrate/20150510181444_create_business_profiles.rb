@@ -14,12 +14,12 @@ class CreateBusinessProfiles < ActiveRecord::Migration
 			t.string  :phone_number, unique: true
 
 			## address
-			t.string  :address1, null: false 
-			t.string  :address2
-			t.integer :zipcode, null: false	
-			t.string  :city, null: false
-			t.string  :state, null: false
-			t.string  :country, null: false
+			t.string  :address, null: false 
+			# t.string  :address2
+			# t.integer :zipcode	
+			# t.string  :city
+			# t.string  :state
+			# t.string  :country
 
 			## lat / long
 			t.decimal :latitude,  precision: 10, scale: 6

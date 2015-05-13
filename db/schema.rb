@@ -24,12 +24,7 @@ ActiveRecord::Schema.define(version: 20150510181444) do
     t.text     "description",                                null: false
     t.string   "website_url"
     t.string   "phone_number"
-    t.string   "address1",                                   null: false
-    t.string   "address2"
-    t.integer  "zipcode",                                    null: false
-    t.string   "city",                                       null: false
-    t.string   "state",                                      null: false
-    t.string   "country",                                    null: false
+    t.string   "address",                                    null: false
     t.decimal  "latitude",          precision: 10, scale: 6
     t.decimal  "longitude",         precision: 10, scale: 6
     t.string   "twitter"
