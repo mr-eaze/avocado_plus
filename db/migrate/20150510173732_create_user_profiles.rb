@@ -2,17 +2,17 @@ class CreateUserProfiles < ActiveRecord::Migration
   def change
     create_table :user_profiles do |t|
 
-    	## user_name / names
-    	t.string  :user_name, unique: true
-    	t.string  :first_name
-    	t.string  :last_name
+    	## names
+    	t.string  :user_name, unique: true, null: false
+    	t.string  :first_name, null: false
+    	t.string  :last_name, null: false
     	
     	## demographics
-    	t.string  :diet
-    	t.string  :gender
-    	t.integer :age
+    	t.string  :diet, null: false
+    	t.string  :gender, null: false
+    	t.integer :age, null: false
     	
-    	## networks
+    	## social networks
         t.string  :twitter, unique: true
     	t.string  :facebook, unique: true
     	t.string  :instagram, unique: true
@@ -21,6 +21,7 @@ class CreateUserProfiles < ActiveRecord::Migration
     	## foreign_keys
     	t.integer :user_id
 
+        ## timestamps
     	t.timestamps
     end
   end

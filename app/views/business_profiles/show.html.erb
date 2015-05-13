@@ -1,36 +1,57 @@
+<!-- mapbox -->
+
+  <div id="map"></div>
+
+  <script>
+		L.mapbox.accessToken = 'pk.eyJ1IjoibXItZWF6ZSIsImEiOiJoZktRWmtzIn0.4hNlGrOoT3rmNXit3ZM9EQ';
+		
+		var map = L.mapbox.map('map', 'mr-eaze.e70a5ac4').setView([ <%= @business_profile.latitude %>, <%= @business_profile.longitude %> ], 15);
+		
+		L.mapbox.featureLayer({
+	    // this feature is in the GeoJSON format: see geojson.org
+	    // for the full specification
+	    type: 'Feature',
+	    geometry: {
+	        type: 'Point',
+	        // coordinates here are in longitude, latitude order because
+	        // x, y is the standard for GeoJSON and many formats
+	        coordinates: [
+	          <%= @business_profile.longitude %>,
+	          <%= @business_profile.latitude %> 
+	        ]
+	    },
+	    properties: {
+	        title: '<%= @business_profile.business_name %>',
+	        description: '<%= @business_profile.address %>',
+	        // one can customize markers by adding simplestyle properties
+	        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+	        'marker-size': 'large',
+	        'marker-color': '#F5F5F5',
+	        // 'marker-symbol': 'cafe'
+	    }
+		}).addTo(map);
+
+	</script>
+
 <!-- business -->
 
 <h2> <%= @business_profile.business_name %> </h2>
-
-<!-- price / rating -->
-
-<div class="container group price-rating">
-	<div class="profile container">
-		<div class="profile label" > price : </div>
-		<div class="profile data"> <%= @business_profile.price_range %> </div>
-	</div>
-
-	<div class="profile container">
-		<div class="profile label" > rating : </div>
-		<div class="profile data"> <%= @business_profile.rating %> </div>
-	</div>
-</div>
 
 <!-- about -->
 
 <div class="container group about">
 	<div class="profile container">
-		<div class="profile label" > type : </div>
-		<div class="profile data"> <%= @business_profile.type_of_business %> </div>
+		<div class="profile label" > business type : </div>
+		<div class="profile data"> <%= @business_profile.business_type %> </div>
 	</div>
 
 	<div class="profile container">
-		<div class="profile label" > cuisine : </div>
+		<div class="profile label" > cuisine style : </div>
 		<div class="profile data"> <%= @business_profile.cuisine_style %> </div>
 	</div>
 
 	<div class="profile container">
-		<div class="profile label" > offering : </div>
+		<div class="profile label" > dietary offerings : </div>
 		<div class="profile data"> <%= @business_profile.dietary_offerings %> </div>
 	</div>
 
@@ -59,38 +80,25 @@
 <div class="container group address">
 	<div class="profile container">
 		<div class="profile label" > address : </div>
-		<div class="profile data"> <%= @business_profile.address1 %> </div>
-	</div>
-	
-	<% if @business_profile.address2 %>
-		<div class="profile container">
-			<div class="profile label" > address 2 : </div>
-			<div class="profile data"> <%= @business_profile.address2 %> </div>
-		</div>
-	<% end %>
-
-	<div class="profile container">
-		<div class="profile label" > zipcode : </div>
-		<div class="profile data"> <%= @business_profile.zipcode %> </div>
-	</div>
-
-	<div class="profile container">
-		<div class="profile label" > city : </div>
-		<div class="profile data"> <%= @business_profile.city %> </div>
-	</div>
-
-	<div class="profile container">
-		<div class="profile label" > state : </div>
-		<div class="profile data"> <%= @business_profile.state %> </div>
-	</div>
-
-	<div class="profile container">
-		<div class="profile label" > country : </div>
-		<div class="profile data"> <%= @business_profile.country %> </div>
+		<div class="profile data"> <%= @business_profile.address %> </div>
 	</div>
 </div>
 
-<!-- social -->
+<!-- lat-long -->
+
+<div class="container group lat-long">
+	<div class="profile container">
+		<div class="profile label" > latitude : </div>
+		<div class="profile data"> <%= @business_profile.latitude %> </div>
+	</div>
+	
+	<div class="profile container">
+		<div class="profile label" > longitude : </div>
+		<div class="profile data"> <%= @business_profile.longitude %> </div>
+	</div>
+</div>
+
+<!-- social networks -->
 
 <div class="container group social">
 	<% if @business_profile.twitter %>

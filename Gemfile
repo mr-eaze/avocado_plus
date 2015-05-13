@@ -49,5 +49,12 @@ gem 'pry-rails', :group => :development
 
 # heroku
 gem 'rails_12factor', group: :production
-# devise
+
+# auth
 gem 'devise'
+
+# geolocation
+gem 'geocoder'
+
+# mapbox
+gem 'mapbox-rails', '~> 1.6.1.1'

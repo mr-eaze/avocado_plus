@@ -17,23 +17,16 @@ ActiveRecord::Schema.define(version: 20150510181444) do
   enable_extension "plpgsql"
 
   create_table "business_profiles", force: :cascade do |t|
-    t.string   "business_name"
-    t.string   "type_of_business"
-    t.string   "cuisine_style"
-    t.string   "dietary_offerings"
-    t.integer  "price_range"
-    t.integer  "rating"
-    t.text     "description"
+    t.string   "business_name",                              null: false
+    t.string   "business_type",                              null: false
+    t.string   "cuisine_style",                              null: false
+    t.string   "dietary_offerings",                          null: false
+    t.text     "description",                                null: false
     t.string   "website_url"
     t.string   "phone_number"
-    t.string   "country"
-    t.string   "state"
-    t.string   "city"
-    t.integer  "zipcode"
-    t.string   "address1"
-    t.string   "address2"
-    t.integer  "latitude"
-    t.integer  "longitude"
+    t.string   "address",                                    null: false
+    t.decimal  "latitude",          precision: 10, scale: 6
+    t.decimal  "longitude",         precision: 10, scale: 6
     t.string   "twitter"
     t.string   "facebook"
     t.string   "instagram"
@@ -62,12 +55,12 @@ ActiveRecord::Schema.define(version: 20150510181444) do
   add_index "businesses", ["reset_password_token"], name: "index_businesses_on_reset_password_token", unique: true, using: :btree
 
   create_table "user_profiles", force: :cascade do |t|
-    t.string   "user_name"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "diet"
-    t.string   "gender"
-    t.integer  "age"
+    t.string   "user_name",  null: false
+    t.string   "first_name", null: false
+    t.string   "last_name",  null: false
+    t.string   "diet",       null: false
+    t.string   "gender",     null: false
+    t.integer  "age",        null: false
     t.string   "twitter"
     t.string   "facebook"
     t.string   "instagram"
