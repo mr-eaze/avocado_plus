@@ -1,8 +1,6 @@
-
-
 <!-- mapbox -->
 
-  <div id="map"></div>
+<div id="map"></div>
 
   <script>
 		L.mapbox.accessToken = 'pk.eyJ1IjoibXItZWF6ZSIsImEiOiJoZktRWmtzIn0.4hNlGrOoT3rmNXit3ZM9EQ';
@@ -35,6 +33,12 @@
 
 	</script>
 
+<!-- back to big map -->
+<div class="nav-bar">
+<!-- 	<%= link_to 'back', business_profiles_path, class: "nav-bar back"%>
+	<%= link_to 'all',  business_profiles_path, class: "nav-bar all"%>
+	<%= link_to 'next', business_profiles_path, class: "nav-bar next"%> -->
+</div>
 
 <!-- business profile -->
 
@@ -54,9 +58,8 @@
 			<div class="profile data address"> <%= @business_profile.address %> </div>
 		</div>
 		
-		<!-- fix bug / link not directing to site -->
 		<div class="profile container singular contact">
-			<a class="profile link website" href='<%= @business_profile.website_url %>'> <%= @business_profile.website_url %> </a>
+			<a class="profile link website" href='http://<%= @business_profile.website_url %>'> <%= @business_profile.website_url %> </a>
 		</div>
 
 		<div class="profile container singular contact">

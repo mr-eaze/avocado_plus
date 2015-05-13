@@ -1,7 +1,7 @@
 .total-container {
 	max-width: 50%;
 	min-width: 100px;
-	margin: 0 25%; 
+	margin: 0 25% 25px; 
 }
 
 h1.profile {
@@ -11,15 +11,41 @@ h1.profile {
 }
 
 .profile.container {
-	margin: 0 0 25px;
+	margin: 0 0 30px;
 }
 
 .profile {
 	display: inline-block;	
 }
 
+  /* ----------------------- */
+ /* ------- nav-bar ------- */
+/* ----------------------- */
 
+.nav-bar {
+	min-width: 300px;
+	width: 100%;
+	height: 40px;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 10px; 
+}
 
+.back {
+	width: 33%;
+	text-align: right;
+}
+
+.all {
+	width: 33%;
+	text-align: center;
+	/*margin: auto;*/
+}
+
+.next {
+	width: 33%;
+	text-align: left;
+}
 
   /* ----------------------------- */
  /* ------- business name ------- */
