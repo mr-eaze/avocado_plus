@@ -5,14 +5,19 @@
   
   <%= favicon_link_tag 'avocado_favicon.png' %>
 
+	<!-- hover library -->
+  <!-- <link href="css/hover-min.css" rel="stylesheet"> -->
+
 	<!-- for mapbox -->
 	<%= javascript_include_tag "https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js" %>
 	<%= stylesheet_link_tag "https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css", media: "all" %>
+
 	<!-- - - - - - - - - - - - - - - - - - - - -->
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 
 </head>
 

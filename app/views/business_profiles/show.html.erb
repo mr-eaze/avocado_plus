@@ -1,3 +1,5 @@
+
+
 <!-- mapbox -->
 
   <div id="map"></div>
@@ -33,104 +35,95 @@
 
 	</script>
 
-<!-- business -->
 
-<h2> <%= @business_profile.business_name %> </h2>
+<!-- business profile -->
 
-<!-- about -->
+<div class="profile total-container">
 
-<div class="container group about">
-	<div class="profile container">
-		<div class="profile label" > business type : </div>
-		<div class="profile data"> <%= @business_profile.business_type %> </div>
-	</div>
 
-	<div class="profile container">
-		<div class="profile label" > cuisine style : </div>
-		<div class="profile data"> <%= @business_profile.cuisine_style %> </div>
-	</div>
+	<!-- business name -->
 
-	<div class="profile container">
-		<div class="profile label" > dietary offerings : </div>
-		<div class="profile data"> <%= @business_profile.dietary_offerings %> </div>
-	</div>
+	<h1 class="profile"> <%= @business_profile.business_name %> </h1>
 
-	<div class="profile container">
-		<div class="profile label" > description : </div>
-		<div class="profile data"> <%= @business_profile.description %> </div>
-	</div>
-</div>
 
-<!-- contact -->
+	<!-- contact -->
 
-<div class="container group contact">
-	<div class="profile container">
-		<div class="profile label" > website : </div>
-		<div class="profile data"> <%= @business_profile.website_url %> </div>
-	</div>
+	<div class="profile container group contact">
 
-	<div class="profile container">
-		<div class="profile label" > phone : </div>
-		<div class="profile data"> <%= @business_profile.phone_number %> </div>
-	</div>
-</div>
+		<div class="profile container singular contact">
+			<div class="profile data address"> <%= @business_profile.address %> </div>
+		</div>
+		
+		<!-- fix bug / link not directing to site -->
+		<div class="profile container singular contact">
+			<a class="profile link website" href='<%= @business_profile.website_url %>'> <%= @business_profile.website_url %> </a>
+		</div>
 
-<!-- address -->
+		<div class="profile container singular contact">
+			<div class="profile data phone"> <%= @business_profile.phone_number %> </div>
+		</div>
 
-<div class="container group address">
-	<div class="profile container">
-		<div class="profile label" > address : </div>
-		<div class="profile data"> <%= @business_profile.address %> </div>
-	</div>
-</div>
+	</div> 
 
-<!-- lat-long -->
 
-<div class="container group lat-long">
-	<div class="profile container">
-		<div class="profile label" > latitude : </div>
-		<div class="profile data"> <%= @business_profile.latitude %> </div>
-	</div>
+	<!-- about -->
+
+	<div class="profile container group about">
+
+		<div class="profile container about style dietary-offerings">
+			<div class="profile label" > dietary offerings </div>
+			<div class="profile data"> <%= @business_profile.dietary_offerings %> </div>
+		</div>
+		
+		<div class="profile container about style business-type">
+			<div class="profile label" > business type </div>
+			<div class="profile data"> <%= @business_profile.business_type %> </div>
+		</div>
+
+		<div class="profile container about style cuisine-style">
+			<div class="profile label" > cuisine style </div>
+			<div class="profile data"> <%= @business_profile.cuisine_style %> </div>
+		</div>
+
+		<div class="profile container about description">
+			<div class="profile label" > description </div>
+			<div class="profile data"> <%= @business_profile.description %> </div>
+		</div>
 	
-	<div class="profile container">
-		<div class="profile label" > longitude : </div>
-		<div class="profile data"> <%= @business_profile.longitude %> </div>
 	</div>
-</div>
 
-<!-- social networks -->
 
-<div class="container group social">
-	<% if @business_profile.twitter %>
-		<div class="profile container">
-			<div class="profile label" > twitter : </div>
-			<div class="profile data"> <%= @business_profile.twitter %> </div>
-		</div>
-	<% end %>
+	<!-- social networks -->
 
-	<% if @business_profile.facebook %>
-		<div class="profile container">
-			<div class="profile label" > facebook : </div>
-			<div class="profile data"> <%= @business_profile.facebook %> </div>
-		</div>
-	<% end %>
+	<div class="container group social">
+		<% if @business_profile.twitter %>
+			<a class="profile social logo twitter" href='<%= @business_profile.twitter %>'>
+				 <%= image_tag("logos/twitter_logo_white.png", class: "logo twitter")%>
+			</a>
+		<% end %>
 
-	<% if @business_profile.instagram %>
-		<div class="profile container">
-			<div class="profile label" > instagram : </div>
-			<div class="profile data"> <%= @business_profile.instagram %> </div>
-		</div>
-	<% end %>
+		<% if @business_profile.facebook %>
+			<a class="profile social logo facebook" href='<%= @business_profile.facebook %>'>
+				 <%= image_tag("logos/facebook_logo_white.png", class: "logo facebook")%>
+			</a>
+		<% end %>
 
-	<% if @business_profile.foursquare %>
-		<div class="profile container">
-			<div class="profile label" > foursquare : </div>
-			<div class="profile data"> <%= @business_profile.foursquare %> </div>
-		</div>
-	<% end %>
-</div>
+		<% if @business_profile.instagram %>
+			<a class="profile social logo instagram" href='<%= @business_profile.instagram %>'>
+				 <%= image_tag("logos/instagram_logo_white.png", class: "logo instagram")%>
+			</a>
+		<% end %>
 
-<!-- end -->
+		<% if @business_profile.foursquare %>
+			<a class="profile social logo foursquare" href='<%= @business_profile.foursquare %>'>
+				 <%= image_tag("logos/foursquare_logo_white.png", class: "logo foursquare")%>
+			</a>
+		<% end %>
+	</div>
+
+</div> <!-- end profile -->
+
+
 
 
 
