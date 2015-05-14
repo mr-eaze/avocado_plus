@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> avocado+ </title>
+  <title> avocado + </title>
   
   <%= favicon_link_tag 'avocado_favicon.png' %>
+
+	<!-- hover library -->
+  <!-- <link href="css/hover-min.css" rel="stylesheet"> -->
+
+	<!-- for mapbox -->
+	<%= javascript_include_tag "https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js" %>
+	<%= stylesheet_link_tag "https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css", media: "all" %>
+
+	<!-- - - - - - - - - - - - - - - - - - - - -->
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+	<!-- - - - - - - - - - - - - - - - - - - - -->
+
+	<%= stylesheet_link_tag "animate.min.css" %>
+
 </head>
-<!-- - - - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - - - - - - - - -->
+
 <body>
 
+	<!-- for devise (i think) -->
 	<p class="notice"> <%= notice %> </p>
 	<p class="alert" > <%= alert  %> </p>
-	
+	<!-- - - - - - - - - - - - - - - -->
+
 	<%= yield %>
 
 </body>

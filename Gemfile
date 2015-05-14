@@ -55,3 +55,6 @@ gem 'devise'
 
 # geolocation
 gem 'geocoder'
+
+# mapbox
+gem 'mapbox-rails', '~> 1.6.1.1'

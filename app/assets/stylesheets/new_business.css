@@ -1,0 +1,75 @@
+#welcome {
+	margin-top: 100px;
+}
+
+#please-fill-out {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 300;
+	font-size: 1em;
+	color: indianred;
+}
+
+.form.container {
+	margin: 10px;
+}
+
+.form.label {
+  width: 47%;
+	height: 20px;
+  font-weight: 300;
+  padding: 5px;
+  text-align : right;
+  float: left;
+  color: darkgrey;
+}
+
+.form.input {
+	width: 53%;
+	height: 20px;
+	padding: 5px;
+	text-align: left;
+}
+
+#business_profile_address {
+	width: 200px;
+}
+
+textarea {
+	border-color: rgb(204, 204, 204);
+	border: 1px solid inset; 
+}
+
+input {
+	width: 200px;
+	margin-bottom: 10px;
+	border: 1px solid inset; 
+}
+
+.button {
+ 	text-align: center;
+ }
+
+#submit-button {
+  border: 0;
+	width : 120px;
+	height: 40px;
+	padding: 10px;
+	margin: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border-bottom: 2px solid darkgrey;
+	background-color: lightgrey;
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+#submit-button:hover {
+	font-size: 1.05em;
+	border-top      : 2px solid darkgrey;
+	border-bottom   : 0px solid darkgrey;
+	border-right    : 2px solid darkgrey;
+	border-left     : 2px solid darkgrey;
+}

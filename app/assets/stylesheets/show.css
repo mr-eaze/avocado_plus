@@ -1,0 +1,227 @@
+.total-container {
+	max-width: 50%;
+	min-width: 100px;
+	margin: 0 25% 25px; 
+}
+
+h1.profile {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.profile.container {
+	margin: 0 0 30px;
+}
+
+.profile {
+	display: inline-block;	
+}
+
+  /* ----------------------- */
+ /* ------- nav-bar ------- */
+/* ----------------------- */
+
+.nav-bar {
+	/*min-width: 300px;*/
+	width: 100%;
+	height: 40px;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 10px; 
+}
+
+.back {
+	width: 49%;
+	padding: 5px 4%; 
+	font-size: 1.2em;
+	text-decoration: none;
+	color: grey;
+	font-weight: 200;
+}
+
+.back:hover {
+	color: black;
+	font-weight: 300;
+}
+
+.new {
+	width: 49%;
+	text-align: right;
+	padding: 5px 4%; 
+	font-size: 1.2em;
+	text-decoration: none;
+	color: grey;
+	font-weight: 200;
+}
+
+.new:hover {
+	color: black;
+	font-weight: 300;
+}
+
+  /* ----------------------------- */
+ /* ------- business name ------- */
+/* ----------------------------- */
+
+.profile.data.address {
+	width: 100%;
+  text-align: center;
+  color: grey;
+  font-weight: 300;
+  font-size: .7em;
+  text-decoration: none;
+}
+
+.profile.link.website {
+	width: 100%;
+  text-align: center;
+  color: grey;
+  font-weight: 300;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.profile.link:hover {
+	font-weight: 400;
+	color: black;
+}
+
+.profile.data.phone {
+	width: 100%;
+  text-align: center;
+  color: grey;
+  font-weight: 300;
+  font-size: .7em;
+  text-decoration: none;
+}
+
+
+  /* ----------------------- */
+ /* ------- contact ------- */
+/* ----------------------- */
+
+.profile.container.group.contact {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.profile.container.singular.contact {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+
+  /* --------------------- */
+ /* ------- about ------- */
+/* --------------------- */
+
+.profile.container.group.about {
+	width: 100%;
+	display: inline-block;
+}
+
+.profile.container.about.style {
+	min-width: 100px;
+	max-width: 100%;
+}
+
+.profile.container.about.style.dietary-offerings {
+	min-width: 33%;
+	float: left;
+}
+
+.profile.container.about.style.business-type {
+	min-width: 33%;
+}
+
+.profile.container.about.style.cuisine-style {
+	min-width: 33%;
+	float: right;
+}
+
+.profile.label {
+	margin-bottom: 10px;
+}
+
+.profile.container.about.description {
+	width: 100%;
+}
+
+
+  /* ---------------------- */
+ /* ------- social ------- */
+/* ---------------------- */
+
+.group.social {
+	max-width: 370px;
+	display: block;
+	margin: auto;
+}
+
+.logo {
+	width : 60px;
+	height: 60px;
+}
+
+.profile.social.logo {
+	background-color: lightgrey;
+	width : 80px;
+	height: 80px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border-bottom: 2px solid darkgrey;
+}
+
+.profile.social.logo.twitter:hover {
+	padding         : 8px;
+	opacity         : .8;
+	background-color: #55ACEE;
+	border-top      : 2px solid #4C9BD6;
+	border-bottom   : 0px solid #4C9BD6;
+	border-right    : 2px solid #4C9BD6;
+	border-left     : 2px solid #4C9BD6;
+}
+
+.profile.social.logo.facebook:hover {
+	padding         : 8px;
+	opacity         : .8;
+	background-color: #3B5998;
+	border-top      : 2px solid #355089;
+	border-bottom   : 0px solid #355089;
+	border-right    : 2px solid #355089;
+	border-left     : 2px solid #355089;
+}
+
+.profile.social.logo.instagram:hover {
+	padding         : 8px;
+	opacity         : .8;
+	background-color: #517fa4;
+	border-top      : 2px solid #497294;
+	border-bottom   : 0px solid #497294;
+	border-right    : 2px solid #497294;
+	border-left     : 2px solid #497294;
+}
+
+.profile.social.logo.foursquare:hover {
+	padding         : 8px;
+	opacity         : .8;
+	background-color: #F94877;
+	border-top      : 2px solid #E0416B;
+	border-bottom   : 0px solid #E0416B;
+	border-right    : 2px solid #E0416B;
+	border-left     : 2px solid #E0416B;
+}
+
+
+
+
+
+
+
+
+
+
+
+

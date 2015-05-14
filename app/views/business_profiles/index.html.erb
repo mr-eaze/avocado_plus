@@ -1,12 +1,76 @@
+<!-- mapbox -->
+
+  <div id="big-map"></div>
+
+ 	<script>
+		L.mapbox.accessToken = 'pk.eyJ1IjoibXItZWF6ZSIsImEiOiJoZktRWmtzIn0.4hNlGrOoT3rmNXit3ZM9EQ';
+		
+		var defaultLat = 40.7356;
+		var defaultLng = -73.9906;
+		var defaultZoom = 13;
+
+		var map = L.mapbox.map('big-map', 'mr-eaze.e70a5ac4').setView([ defaultLat, defaultLng ], defaultZoom);
+
+		var dropPin = function(lng, lat, name, address, id) {
+			var pin =	L.mapbox.featureLayer({
+		    // this feature is in the GeoJSON format: see geojson.org
+		    // for the full specification
+		    type: 'Feature',
+		    geometry: {
+		        type: 'Point',
+		        // coordinates here are in longitude, latitude order because
+		        // x, y is the standard for GeoJSON and many formats
+		        coordinates: [ lng, lat ]
+		    },
+		    properties: {
+		        title: name,
+		        description: address,
+
+		        // this url should be corrected for production <--- !!!
+		        url: 'http://localhost:3000/business_profiles/' + id,
+		        
+		        // one can customize markers by adding simplestyle properties
+		        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+		        'marker-size': 'large',
+		        'marker-color': '#F5F5F5',
+		        // 'marker-symbol': 'cafe'
+		    }
+			});
+			pin.addTo(map);
+
+			// double click, to see business_profile
+			pin.on('dblclick', function(e) {
+	    	window.open(e.layer.feature.properties.url);
+			});
+		};
+
+	</script>
+
+
+<!-- index of businesses -->
+
 <% @business_profiles.each do |business_profile| %>
-	
+
+<!-- <div class="list">
 	<li class="business item"> 
 		<div class="container profile name">
-			<div> <%= business_profile.business_name %> </div>
+			<%= link_to business_profile.business_name, business_profile %>
 		</div>
-
-		<!-- add distance from user current location -->
-
 	</li>
+</div> -->
+	
 
+	<script>
+
+		dropPin(
+			<%= business_profile.longitude %>, 
+			<%= business_profile.latitude %>, 
+			"<%= business_profile.business_name %>",
+			"<%= business_profile.address %>",
+			"<%= business_profile.id %>"
+		);
+
+	</script>
 <% end %>
+
+

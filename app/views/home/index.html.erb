@@ -1,15 +1,20 @@
-<img src="http://1.bp.blogspot.com/-oqVIi1MipwM/Up-t3UvOdqI/AAAAAAAAAas/34XRubNY7nQ/s1600/AvocadoPatternYES.jpg" id="bg" alt="">
+<!-- <img src="http://1.bp.blogspot.com/-oqVIi1MipwM/Up-t3UvOdqI/AAAAAAAAAas/34XRubNY7nQ/s1600/AvocadoPatternYES.jpg" id="bg" alt=""> -->
 
 <div id="welcome-container">
 
 	<div id="message-container">
-		<h1> avocado plus </h1>
-		<p> "a plant based food guide" </p>
-		<hr>
-		<div id="created-by"> created by </div>
-		<div id="mr-eaze">
-			<a href="https://github.com/mr-eaze/avocado_plus"> mr-eaze </a>
-		</div>
+		<h1 id="avocado-plus-header"> avocado plus </h1>
+		<p id="plant-based"> "a plant based food guide" </p>
 	</div>
 
+	<div id="avocado-logo-large-container">
+		<a href="<%= business_profiles_path %>">
+			<%= image_tag "avocado_plus_logo_large.png", :id => "avocado-plus-logo-large", :class => "animated rollIn"%>
+		</a>
+	</div>
+
+	<div id="created-by-container">
+		<div id="created-by"> created by : </div>
+		<a id="mr-eaze" href="https://github.com/mr-eaze/avocado_plus"> mr-eaze </a>
+	</div>
 </div>

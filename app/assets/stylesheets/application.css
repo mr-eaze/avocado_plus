@@ -13,14 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	width : 100%;
-	height: 100%;
-	margin: 0;
+	position: relative;
+	top     : -16px;
+	width   : 100%;
+	height  : 100%;
+	margin  : 0;
+	overflow: scroll;
 }
 
 h2 {
@@ -31,28 +37,9 @@ br {
 	margin: 5px 0;
 }
 
-.business.item {
-	list-style-type: none;
-	width          : 25%;
-	margin         : 50px; 
-}
-
-.container.profile.name {
-	width     : 100%;
-	text-align: center;
-}
-
 .container {
 	width  : 100%;
 	display: inline-block;
-}
-
-.profile {
-	display: inline-block;	
-}
-
-.profile.container {
-	margin: 2px;
 }
 
 .form {
@@ -64,41 +51,9 @@ br {
 }
 
 .group {
-	margin: 5px;
+	margin: 15px;
 }
 
-.label {
-  width      : 49%;
-  float      : left;
-  text-align : right;
-  font-weight: 300;
-}
-
-.input {
-	width: 49%;
-	padding-left: 10px;
-}
-
-.data {
- 	width: 49%;
- 	padding-left: 5px;
- }
-
- .button {
- 	text-align: center;
- }
-
- .form.container {
- 	margin: 5px;
- }
-
-#please-fill-out {
-	text-align: center;
-	margin-bottom: 20px;
-	font-weight: 300;
-	font-size: .8em;
-	color: indianred;
-}
 
 
 
