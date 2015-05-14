@@ -23,7 +23,7 @@ h1.profile {
 /* ----------------------- */
 
 .nav-bar {
-	min-width: 300px;
+	/*min-width: 300px;*/
 	width: 100%;
 	height: 40px;
 	display: inline-block;
@@ -32,19 +32,32 @@ h1.profile {
 }
 
 .back {
-	width: 33%;
+	width: 49%;
+	padding: 5px 4%; 
+	font-size: 1.2em;
+	text-decoration: none;
+	color: grey;
+	font-weight: 200;
+}
+
+.back:hover {
+	color: black;
+	font-weight: 300;
+}
+
+.new {
+	width: 49%;
 	text-align: right;
+	padding: 5px 4%; 
+	font-size: 1.2em;
+	text-decoration: none;
+	color: grey;
+	font-weight: 200;
 }
 
-.all {
-	width: 33%;
-	text-align: center;
-	/*margin: auto;*/
-}
-
-.next {
-	width: 33%;
-	text-align: left;
+.new:hover {
+	color: black;
+	font-weight: 300;
 }
 
   /* ----------------------------- */

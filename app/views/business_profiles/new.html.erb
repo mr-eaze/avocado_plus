@@ -2,9 +2,9 @@
 
 <%= form_for @business_profile do |f| %>
 
-<h2> welcome </h2>
+<h2 id="welcome"> welcome </h2>
 
-<div id="please-fill-out"> please fill out all of the required fields : </div>
+<div id="please-fill-out"> - please fill out all of the listed fields - </div>
 
 <!-- business name -->
 
@@ -77,7 +77,7 @@
 	</div>
 		
 	<div class="button container submit">
-		<%= f.submit 'Submit' %>
+		<%= f.submit 'Submit', id: "submit-button" %>
 	</div>	
 
 <% end %>

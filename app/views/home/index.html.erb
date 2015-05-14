@@ -3,12 +3,14 @@
 <div id="welcome-container">
 
 	<div id="message-container">
-		<%= link_to 'avocado plus',  business_profiles_path, class: "avocado-plus link"%>
-		<p> "a plant based food guide" </p>
+		<h1 id="avocado-plus-header"> avocado plus </h1>
+		<p id="plant-based"> "a plant based food guide" </p>
 	</div>
 
 	<div id="avocado-logo-large-container">
-		<%= image_tag 'avocado_plus_logo_large.png' %>
+		<a href="<%= business_profiles_path %>">
+			<%= image_tag "avocado_plus_logo_large.png", :id => "avocado-plus-logo-large", :class => "animated rollIn"%>
+		</a>
 	</div>
 
 	<div id="created-by-container">
