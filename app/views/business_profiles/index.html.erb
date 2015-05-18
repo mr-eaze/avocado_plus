@@ -11,7 +11,7 @@
 
 		var map = L.mapbox.map('big-map', 'mr-eaze.e70a5ac4').setView([ defaultLat, defaultLng ], defaultZoom);
 
-		var dropPin = function(lng, lat, name, address, id) {
+		var dropPin = function(lng, lat, name, diet, id) {
 			var pin =	L.mapbox.featureLayer({
 		    // this feature is in the GeoJSON format: see geojson.org
 		    // for the full specification
@@ -24,16 +24,12 @@
 		    },
 		    properties: {
 		        title: name,
-		        description: address,
-
+		        description: diet, 
 		        // this url should be corrected for production <--- !!!
-		        url: 'http://localhost:3000/business_profiles/' + id,
-		        
-		        // one can customize markers by adding simplestyle properties
-		        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+		        url: 'http://localhost:3000/business_profiles/' + id,		        
 		        'marker-size': 'large',
 		        'marker-color': '#F5F5F5',
-		        // 'marker-symbol': 'cafe'
+		        'marker-symbol': 'circle'
 		    }
 			});
 			pin.addTo(map);
@@ -66,7 +62,7 @@
 			<%= business_profile.longitude %>, 
 			<%= business_profile.latitude %>, 
 			"<%= business_profile.business_name %>",
-			"<%= business_profile.address %>",
+			"<%= business_profile.dietary_offerings %>",
 			"<%= business_profile.id %>"
 		);
 

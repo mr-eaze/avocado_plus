@@ -1,16 +1,16 @@
  .profile.label {
   width: 100%;
   text-align : center;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.1em;
-  color: black;
+  color: darkgrey;
  	/*padding-left: 5px;*/
  }
 
 .profile.data {
   width: 100%;
   text-align : center;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1em;
  	/*padding-left: 5px;*/
  }
